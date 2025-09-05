@@ -1,0 +1,451 @@
+body {
+font-family: "Segoe UI", Arial, sans-serif;
+background-color: #0f0f0f;
+color: #f5f5f5;
+margin: 0;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background: #0a0a0a;
+font-family: Arial, sans-serif;
+color: white;
+}
+
+/*-- Top Bar aqui -- */
+.top-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 8px 20px;
+background-color: #111;
+font-size: 14px;
+border-bottom: none !important;
+box-shadow: none !important;
+background-clip: padding-box;
+font-family: "Oswald"
+}
+
+.top-bar a {
+color: white;
+text-decoration: none;
+margin: 0 5px;
+}
+
+.top-bar a span {
+margin-right: 5px;
+}
+
+/* --- Header --- */
+.main-header {
+background-color: #000;
+padding: 9px 0 16px;
+}
+
+.header-inner {
+max-width: 1500px;
+margin: 0 auto;
+padding: 0 24px;
+}
+
+.correo-contacto i {
+font-size: 16px;
+}
+
+.correo-contacto a {
+font-family: Galdeano;
+color: #fff;
+text-decoration: none;
+transition: color 0.1s ease;
+}
+
+.correo-contacto:hover i,
+.correo-contacto:hover a {
+color: #e63946;
+}
+
+.top-icons {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.menu-icon,
+.search-icon {
+font-size: 24px;
+cursor: pointer;
+color: white;
+}
+
+/* para centrar logo */
+.logo-center {
+text-align: center;
+margin: 5px 0 20px;
+height: auto;
+}
+
+.logo-placeholder img {
+width: 500px;
+max-width: 90%;
+height: auto;       
+max-height: 70px;    
+object-fit: contain;
+display: inline-block;
+}
+
+/* nav */
+.main-nav {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding-bottom: 10px;
+}
+
+.main-nav a {
+text-decoration: none;
+color: white;
+font-weight: bold;
+font-size: 15px;
+}
+
+.main-nav a.active {
+color: #e32a4a;
+}
+
+/* ----------- menu ------------- */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100vh;
+  background-color: #111;
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 20px;
+}
+
+/* Cuando está activo */
+.side-menu.open {
+  left: 0;
+}
+
+/* Cabecera del menú con botón cerrar */
+.side-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Opciones del menú lateral */
+.side-menu-options {
+  list-style: none;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.side-menu-options li {
+  margin: 20px 0;
+}
+
+.side-menu-options a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.side-menu-options a:hover {
+  color: #e32a4a;
+}
+
+/*---- menu ----*/
+
+.menu {
+list-style: none;
+display: flex;
+gap: 0; /* Sin separación extra */
+padding: 0;
+margin: 0;
+}
+
+.menu li {
+padding: 0 10px;
+border-right: 3px solid #ff3333; /* Barra roja */
+}
+
+.menu li:last-child {
+    border-right: none; /* Quita la última barra */
+}
+
+.menu a {
+font-family: Galdeano;
+color: white;
+text-decoration: none;
+font-weight: 400; /* Peso normal */
+font-size: 14px; /* Tamaño moderado */
+transition: color 0.1s ease; /* Transición suave */
+}
+
+nav ul li:not(:last-child)::after {
+  content: "";
+  width: 2px; /* grosor */
+  margin-left: 5px; /* 🔥 bájalo a 2px o quítalo */
+  margin-right: 5px; /* 🔥 bájalo a 2px o quítalo */
+}
+
+
+.menu a:hover {
+color: #ff3333; /* Cambia a rojo al pasar el cursor */
+}
+
+/*-- root ---*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+--bg-color: #121212;
+--card-bg: #161616;
+--text-color: #e0e0e0;
+--subtitle-color: #bdbdbd;
+--primary-color: #e74c3c;
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.header {
+text-align: center;
+padding: 40px 20px;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+gap: 15px;
+}
+
+/* Línea a la izquierda del título */
+.header h1::before {
+    content: '';
+    flex: 1; 
+    height: 5px;
+    background-color: var(--primary-color);
+}
+
+/* Línea a la derecha del título */
+.header h1::after {
+    content: '';
+    flex: 1; 
+    height: 5px; /* Aumentado a 3px para hacerla más gruesa */
+    background-color: var(--primary-color);
+}
+
+.header p {
+    font-size: 1em;
+    color: var(--subtitle-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Ancho máximo del grid, puedes ajustarlo si quieres que las líneas se estiren más */
+    margin: auto;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.card:hover .image-container img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: var(--subtitle-color);
+}
+
+.card-type {
+    color: var(--primary-color);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 8px;
+    animation-name: zoom;
+    animation-duration: 0.4s; /* duracion al abrir */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5em;
+        gap: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container img {
+        height: 250px;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/* --- Preparación: permitir transform sin afectar layout --- */
+.header-inner { position: relative; }
+
+/* Asegura que el icono esté preparado para moverse */
+.menu-icon {
+  display: inline-block;
+  line-height: 1;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 50;              /* para que quede por encima si se superpone */
+  transition: transform .18s ease;
+  transform: none;
+}
+
+/* En pantallas pequeñas lo dejamos en su sitio (fallback) */
+@media (max-width: 760px) {
+  .menu-icon {
+    transform: none !important;
+  }
+}
+
+.right .section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  height: 50px;
+}
+.right .section-title::before,
+.right .section-title::after {
+  content: "";
+  height: 6px;
+  width: 48px;
+  background: #e32a4a;
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}

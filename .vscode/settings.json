@@ -1,0 +1,15 @@
+{
+    "liveServer.settings.port": 5501,
+
+    // 🔥 Mejoras de texto
+    "editor.fontSize": 16,              
+    "editor.fontWeight": "bold",        
+    "editor.fontFamily": "Cascadia Code, Fira Code, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "workbench.colorCustomizations": {
+        "minimap.background": "#00000000",
+        "scrollbar.shadow": "#00000000"
+    },
+    
+}
+

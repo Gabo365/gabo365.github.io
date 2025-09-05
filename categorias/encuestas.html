@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encuestas</title>
+<link rel="stylesheet" href="/css´s/encuestas.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!------------ FUENTES -------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Galdeano&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!---- despliegue del menu ---->
+<div id="sideMenu" class="side-menu">
+    <div class="side-menu-header">
+        <span class="close-btn" onclick="toggleMenu()">✖</span>
+    </div>
+<ul class="side-menu-options">
+    <li><a href="#">Sondeo 2025</a></li>
+    <li><a href="#">Elecciones 2026</a></li>
+    <li><a href="#">Sondeo Provincial 2026</a></li>
+</ul>
+</div>
+
+<!----- SCRIPT ------>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('sideMenu');
+        menu.classList.toggle('open');
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuIcon = document.querySelector('.menu-icon');
+        if (menuIcon) {
+        menuIcon.addEventListener('click', toggleMenu);
+        }
+    });
+</script>  
+<!-- fin del script para menu -->
+
+<!------- Barra --------->
+<div class="top-bar">
+    <ul class="menu">
+        <li><a href="/index.html">REGRESAR</a></li>
+        <li><a href="#gestionactual">DINA B.</a></li>
+        <li><a href="#gestionactual">LUCHO N.</a></li>
+        <li><a href="#gestionactual">GABRIEL M.</a></li>
+        <li><a href="#gestionactual">MARLEM M.</a></li>
+    </ul>
+
+    <div class="correo-contacto">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/in%3Asent+grupopaladines%40gmail.com">grupopaladines@gmail.com</a>
+    </div>
+</div>
+
+<!-- Header Principal -->
+<header class="main-header">
+    <div class="header-inner">
+    <div class="top-icons">
+        <div class="menu-icon">☰</div>
+    </div>
+
+    <div class="logo-center">
+        <div class="logo-placeholder">
+            <img src="/fotos/logogpcanal.jpg" alt="GP Canal">
+        </div>
+    </div>
+    
+    <nav class="main-nav">
+        <a href="#provinciales">PIURA</a>
+        <a href="#provinciales">PAITA</a>
+        <a href="#provinciales">SULLANA</a>
+        <a href="#provinciales">TALARA</a>
+        <a href="#provinciales">HUANCABAMBA</a>
+        <a href="#provinciales">AYABACA</a>
+        <a href="#provinciales">SECHURA</a>
+        <a href="#provinciales">MORROPON</a>
+    </nav>
+    </div>
+</header>
+
+<!------------ gestion actual 2025 ------------->
+
+<section id="gestionactual"></section>
+
+<header class="header">
+    <h1>Sondeo Actual Gestión 2025</h1>
+    <p>GP Consultores Políticos</p>
+</header>
+
+<main class="grid-container">
+        <!--- DINA BOLUARTE --->
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.1 DINA BOLUARTE.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.1 DINA BOLUARTE.jpg" alt="DINA BOLUARTE">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>DINA BOLUARTE</h2>
+                <p>Sondeo sobre la gestión presidencial de Dina Boluarte</p>
+            </div>
+        </div>
+
+        <!--- LUCHO NEYRA --->
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.2 NEYRA LEON.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.2 NEYRA LEON.jpg" alt="LUCHO NEYRA LEON">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>LUCHO NEYRA</h2>
+                <p>Calificación de la gestión de Lucho Neyra.</p>
+            </div>
+        </div>
+
+        <!--- GABRIEL MADRID --->
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.3 GABRIEL MADRID.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.3 GABRIEL MADRID.jpg" alt="GABRIEL MADRID">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>GABRIEL MADRID</h2>
+                <p>Resultados del sondeo ciudadano sobre la gestión de Gabriel Madrid.</p>
+            </div>
+        </div>
+
+        <!--- MARLEM MOGOLLON --->
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.4 SULLANA MARLEN MOGOLLÒN.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.4 SULLANA MARLEN MOGOLLÒN.jpg" alt="MARLEM MOGOLLÓN">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>MARLEM MOGOLLÓN</h2>
+                <p>Opinión pública acerca del Alcalde provincial Marlem Mogollón.</p>
+            </div>
+        </div>
+
+        <!--- SIGIFREDO ZARATE --->
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.5 TALARA SIGIFREDO ZARATE.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.5 TALARA SIGIFREDO ZARATE.jpg" alt="SIGIFREDO ZARATE">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>SIGIFREDO ZARATE</h2>
+                <p>Percepción de la ciudadanía sobre la gestión de Sigifredo Zarate.</p>
+            </div>
+        </div>
+
+        <!--- RICHARD BACA --->
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.6 CHULUCANAS RICHARD BACA.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.6 CHULUCANAS RICHARD BACA.jpg" alt="RICHARD BACA">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>RICHARD BACA</h2>
+                <p>Opinión pública: calificación de la gestión del alcalde de Morropon Chulucanas Richard Baca.</p>
+            </div>
+        </div>
+
+        <!--- DARWIN QUINDE --->
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.7 AYABACA DARWIN QUINDE.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.7 AYABACA DARWIN QUINDE.jpg" alt="DARWIN QUINDE">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>DARWIN QUINDE</h2>
+                <p>Resultados del sondeo ciudadano sobre la gestión del alcalde Darwin Quinde.</p>
+            </div>
+        </div>
+
+        <!--- HERNAN LIZANA --->
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.8 HUANCABAMBA HERNAN LIZANA.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.8 HUANCABAMBA HERNAN LIZANA.jpg" alt="HERNAN LIZANA">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>HERNAN LIZANA</h2>
+                <p>Encuesta de percepción ciudadana sobre la gestión del alcalde hernan Lizana.</p>
+            </div>
+        </div>
+
+        <!--- PEDRO CUADROS --->
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.9 PAITA PEDRO CUADROS.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.9 PAITA PEDRO CUADROS.jpg" alt="PEDRO CUADROS">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>PEDRO CUADROS</h2>
+                <p>Evaluación pública de la gestión municipal del alcalde Pedro Cuadros.</p>
+            </div>
+        </div>
+
+        <!--- CARMEN MORALES --->
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.10 SECHURA CARMEN MORALES.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/3ero, del 10 al 1/0.10 SECHURA CARMEN MORALES.jpg" alt="CARMEN MORALES">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>Carmen Morales</h2>
+                <p>Evaluación ciudadana de la gestión de Carmen Morales</p>
+            </div>
+        </div>
+</main>
+
+<!------------- presidenciales 2026 --------------->
+
+<header class="header">
+    <h1>Elecciones presidenciales 2026</h1>
+    <p>GP Consultores Políticos</p>
+</header>
+
+<main class="grid-container">
+    <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/1 ALCALDE PROVINCIA DE PIURA.jpg')">
+        <div class="image-container">
+            <img src="/fotos/DISEÑOS DE GP CANAL 2025/2do/RESULTADOS PRESIDENTE/1 PRESIDENTE.jpg" alt="PRESIDENTE">
+        </div>
+        <div class="card-content">
+            <p class="card-type">Política y Ciudadanía</p>
+            <h2>PRESIDENTE</h2>
+            <p>Resultados del Sondeo provincial 2026.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/2do/RESULTADOS PRESIDENTE/2 SENADOR.jpg')">
+        <div class="image-container">
+            <img src="/fotos/DISEÑOS DE GP CANAL 2025/2do/RESULTADOS PRESIDENTE/2 SENADOR.jpg" alt="SENADOR">
+        </div>
+        <div class="card-content">
+            <p class="card-type">Política y Ciudadanía</p>
+            <h2>SENADOR</h2>
+            <p>Resultados del Sondeo provincial 2026.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/2do/RESULTADOS PRESIDENTE/3 DIPUTADO.jpg')">
+        <div class="image-container">
+            <img src="/fotos/DISEÑOS DE GP CANAL 2025/2do/RESULTADOS PRESIDENTE/3 DIPUTADO.jpg" alt="DIPUTADO">
+        </div>
+        <div class="card-content">
+            <p class="card-type">Política y Ciudadanía</p>
+            <h2>DIPUTADO</h2>
+            <p>Resultados del Sondeo provincial 2026.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/2do/RESULTADOS PRESIDENTE/4 GOBERNADOR REGIONAL.jpg')">
+        <div class="image-container">
+            <img src="/fotos/DISEÑOS DE GP CANAL 2025/2do/RESULTADOS PRESIDENTE/4 GOBERNADOR REGIONAL.jpg" alt="Gobernador Regional">
+        </div>
+        <div class="card-content">
+            <p class="card-type">Política y Ciudadanía</p>
+            <h2>PIURA</h2>
+            <p>Resultados del Sondeo provincial 2026.</p>
+        </div>
+    </div>        
+</main>
+
+<!------------ provinciales  --------------->
+
+<section id="provinciales"></section>
+    <header class="header">
+        <h1>Sondeo Provincial 2026</h1>
+        <p>GP Consultores Políticos</p>
+    </header>
+
+    <main class="grid-container">
+
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/1 ALCALDE PROVINCIA DE PIURA.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/1 ALCALDE PROVINCIA DE PIURA.jpg" alt="Votos en Piura">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>PIURA</h2>
+                <p>Resultados de las votaciones en la provincia de Piura.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/2 ALCALDE PROVINCIA DE SULLANA.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/2 ALCALDE PROVINCIA DE SULLANA.jpg" alt="Votos en Sullana">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>SULLANA</h2>
+                <p>Resultados de las votaciones en la provincia de Sullana.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/3 ALCALDE PROVINCIA DE TALARA.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/3 ALCALDE PROVINCIA DE TALARA.jpg" alt="Votos en Talara">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>TALARA</h2>
+                <p>Resultados de las votaciones en la provincia de Talara.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/4 ALCALDE PROVINCIA DE MORROPON CHULUCANAS.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/4 ALCALDE PROVINCIA DE MORROPON CHULUCANAS.jpg" alt="Votos en Morropon Chulucanas">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>Morropon Chulucanas</h2>
+                <p>Resultados de las votaciones en la provincia de Morropon Chulucanas.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/5 ALCALDE PROVINCIA DE HUANCABAMBA.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/5 ALCALDE PROVINCIA DE HUANCABAMBA.jpg" alt="Votos en Huancabamba">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>Huancabamba</h2>
+                <p>Resultados de las votaciones en la provincia de Huancabamba.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/6 ALCALDE PROVINCIA DE AYABACA.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/6 ALCALDE PROVINCIA DE AYABACA.jpg" alt="Votos en Ayabaca">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>Ayabaca</h2>
+                <p>Resultados de las votaciones en la provincia de Ayabaca.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/7 ALCALDE PROVINCIA DE PAITA.jpg')">
+            <div class="image-container">
+                <img src="/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/7 ALCALDE PROVINCIA DE PAITA.jpg" alt="Votos en Paita">
+            </div>
+            <div class="card-content">
+                <p class="card-type">Política y Ciudadanía</p>
+                <h2>Paita</h2>
+                <p>Resultados de las votaciones en la provincia de Paita.</p>
+            </div>
+        </div>
+
+<div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/8 ALCALDE PROVINCIA DE SECHURA.jpg')">
+    <div class="image-container">
+        <img src="/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/8 ALCALDE PROVINCIA DE SECHURA.jpg" alt="Votos en Sechura">
+    </div>
+    <div class="card-content">
+        <p class="card-type">Política y Ciudadanía</p>
+        <h2>Sechura</h2>
+        <p>Resultados de las votaciones en la provincia de Sechura.</p>
+    </div>
+</div>
+
+<div class="card" onclick="openModal('/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/RESULTADOS FINALES PROVINCIA DE HUANCABAMBA.jpg')">
+    <div class="image-container">
+        <img src="/fotos/DISEÑOS DE GP CANAL 2025/publicar primero/RESULTADOS PROVINCIA del 9 al 1/RESULTADOS FINALES PROVINCIA DE HUANCABAMBA.jpg" alt="Votos en Huancabamba">
+    </div>
+    <div class="card-content">
+        <p class="card-type">Política y Ciudadanía</p>
+        <h2>Huancabamba</h2>
+        <p>Resultados de las votaciones en la provincia de Huancabamba.</p>
+    </div>
+</div>
+
+</main>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<!--- script --->
+<script>
+    function openModal(imageSrc) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImg.src = imageSrc;
+    }
+
+    function closeModal() {
+        var modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        var modal = document.getElementById("imageModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<!--- script2 --->
+
+<script>
+(function(){
+function alignMenuIcon(){
+    const menu = document.querySelector('.menu-icon');
+    const nav  = document.querySelector('.main-nav');
+    const headerInner = document.querySelector('.header-inner');
+    if (!menu || !nav || !headerInner) return;
+
+    // No aplicamos en pantallas pequeñas
+    if (window.innerWidth <= 760) {
+    menu.style.transform = 'none';
+    return;
+    }
+
+    // aseguramos estado inicial para medición precisa
+    menu.style.transform = 'none';
+
+    const menuRect = menu.getBoundingClientRect();
+    const navRect  = nav.getBoundingClientRect();
+
+    // queremos alinear CENTROS verticales:
+    const centerMenu = menuRect.top + menuRect.height/2;
+    const centerNav  = navRect.top  + navRect.height/2;
+
+    // distancia que debemos trasladar (positivo = bajar)
+    const delta = centerNav - centerMenu;
+
+    // aplicamos la traslación (no afecta el layout)
+    menu.style.transform = 'translateY(' + Math.round(delta) + 'px)';
+  }
+
+  // Ejecutar en carga y en redimension
+  window.addEventListener('load', alignMenuIcon);
+  let _t;
+  window.addEventListener('resize', function(){
+    clearTimeout(_t);
+    _t = setTimeout(alignMenuIcon, 80);
+  });
+})();
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
