@@ -6,8 +6,8 @@
 body {
     margin: 0;
     font-family: 'Montserrat';
-    background-color: #121212;
-    color: #fff;
+    background-color: #0c0c0c;
+    color: white;
 }
 
 p {
@@ -180,7 +180,7 @@ html {
 
 /* NOTICIAS */
 .noticia-mini {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     border-bottom: 1px solid #333;
     padding-bottom: 15px;
     box-sizing: border-box;
@@ -200,10 +200,15 @@ html {
     object-fit: cover;
 }
 
+.box-video {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 .noticia-2 {
     margin: 0;
-    border-bottom: 1px solid #333;
-    padding-bottom: 15px;
+    border-bottom: 0;
+    padding-bottom: 0;
 }
 
 .fecha {
@@ -262,7 +267,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
     gap: 35px;
 }
 
@@ -299,7 +304,7 @@ h4 {
 /* SECCION VIDEOS */
 .top-story-box {
     text-align: center;
-    margin: 40px 0 20px 0;
+    margin: 0 0 20px 0;
     color: white;
     font-family: 'Georgia', serif;
 }
@@ -328,7 +333,7 @@ h4 {
 .subtitle {
     color: #e63946;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 2px;
     padding-top: 0;
     font-size: 18px;
     font-family: 'Montserrat';
@@ -338,7 +343,7 @@ h4 {
 /* VIDEOS RESPONSIVOS */
 .video1-container {
     max-width: 100%;
-    padding: 25px 0;
+    padding: 0 0 20px 0;
     text-align: center;
     border-bottom: 1px solid #333;
     box-sizing: border-box;
@@ -380,6 +385,10 @@ h4 {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.video-de-abajo {
+    padding: 15px 0 20px 0;
 }
 
 /* MEDIA QUERIES - RESPONSIVIDAD */
