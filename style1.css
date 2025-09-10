@@ -180,7 +180,7 @@ html {
 
 /* NOTICIAS */
 .noticia-mini {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     border-bottom: 1px solid #333;
     padding-bottom: 15px;
     box-sizing: border-box;
@@ -267,7 +267,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8vh;
+    height: 10vh;
     gap: 35px;
 }
 
