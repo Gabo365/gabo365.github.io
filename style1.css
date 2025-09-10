@@ -179,6 +179,8 @@ html {
 }
 
 /* NOTICIAS */
+
+
 .noticia-mini {
     margin-bottom: 25px;
     border-bottom: 1px solid #333;
@@ -226,6 +228,7 @@ h4 {
     font-size: 15px;
     line-height: 1.4em;
     margin: 0;
+    text-align: justify;
 }
 
 /* COLUMNA CENTRO */
@@ -341,6 +344,8 @@ h4 {
 }
 
 /* VIDEOS RESPONSIVOS */
+
+
 .video1-container {
     max-width: 100%;
     padding: 0 0 20px 0;
@@ -355,6 +360,7 @@ h4 {
 
 .video1-container h1 {
     font-size: 28px;
+    margin-top: 15px;
     margin-bottom: 15px;
     line-height: 1.3;
 }

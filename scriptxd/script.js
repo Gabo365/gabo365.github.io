@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // --- elementos principales ---
+  // elementos principales
   const carousel = document.getElementById('carousel');
   const leftBtn = document.querySelector('.carousel-btn.left');
   const rightBtn = document.querySelector('.carousel-btn.right');
@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // calcula paso de movimiento: ancho de una tarjeta + gap
   function getStep() {
     const card = carousel.querySelector('.card');
     const gapStr = getComputedStyle(carousel).getPropertyValue('gap') || '18';
@@ -22,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return (card ? card.offsetWidth : 230) + gap;
   }
 
-  // scroll por botones
+  // scroll
   leftBtn?.addEventListener('click', () => {
     carousel.scrollBy({ left: -getStep(), behavior: 'smooth' });
   });
@@ -30,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     carousel.scrollBy({ left: getStep(), behavior: 'smooth' });
   });
 
-  // habilitar / deshabilitar botones según posición
+  // habilitar / deshabilitar botones
   function updateButtons() {
     if (!leftBtn || !rightBtn) return;
     const maxScrollLeft = Math.max(0, carousel.scrollWidth - carousel.clientWidth);
@@ -41,17 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', updateButtons);
   updateButtons();
 
-  // soporte teclado cuando el carousel tiene foco
   carousel.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') rightBtn?.click();
     if (e.key === 'ArrowLeft') leftBtn?.click();
   });
 
-  // --- Modal "Ver más" ---
   function populateModal() {
     if (!modalGrid) return;
     modalGrid.innerHTML = '';
-    // clonamos info de cada card: imagen + título
     const cards = Array.from(carousel.querySelectorAll('.card'));
     cards.forEach(card => {
       const img = card.querySelector('img');
@@ -67,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
       mCard.appendChild(h4);
       modalGrid.appendChild(mCard);
 
-      // al click abrir imagen en pestaña nueva (opcional)
       nImg.addEventListener('click', () => {
         window.open(nImg.src, '_blank');
       });
@@ -95,12 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
   modalClose?.addEventListener('click', closeModal);
   modalBackdrop?.addEventListener('click', closeModal);
 
-  // cerrar con Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal?.classList.contains('open')) closeModal();
   });
 
-  // si el usuario hace pointerdown + drag, al soltar actualizamos botones
   carousel.addEventListener('pointerup', updateButtons);
   carousel.addEventListener('pointercancel', updateButtons);
   carousel.addEventListener('pointerleave', updateButtons);
